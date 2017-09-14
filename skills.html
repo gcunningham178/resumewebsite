@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Home</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+     <link rel="stylesheet" type="text/css" href="css/resume.css">
+</head>
+
+<body>
+
+<div id="container">
+        <!--Navigation bar-->
+                <nav class="navbar w3-top w3-container">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand w3-text-shadow" href="/">Resume Site</a>
+                    </div>
+                    <div id="healthNav">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="skills.php">Skills</a></li>
+                        <li><a href="references.php">References</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                
+<!--Content section-->
+<!--Angular JS will be used to populate this section with content based on link-->
+
+<div id="content" class="w3-container">
+    
+            <div class="w3-container w3-black w3-cell w3-third w3-mobile w3-card-4" style="height: 550px"> 
+                <a class="categories w3-bottombar" onclick="showCurrentTab(event, 'professional', 'skillSection', 'categories');">
+                    <div class="w3-hover-light-grey w3-padding">Professional Skills</div>
+                </a>
+                
+                <a class="categories w3-bottombar" onclick="showCurrentTab(event, 'technical', 'skillSection', 'categories');">
+                    <div class="w3-hover-light-grey w3-padding">Technical Knowledge</div>
+                </a>
+                
+                <a class="categories w3-bottombar" onclick="showCurrentTab(event, 'langTech', 'skillSection', 'categories');">
+                    <div class="w3-hover-light-grey w3-padding">Programming Languages/Technologies</div>
+                </a>
+           </div>
+            <!--style="margin-left:130px"-->
+           <div class="w3-container w3-light-grey w3-cell w3-twothird w3-mobile w3-card-4 w3-padding">
+                <div id="langTech" class="w3-container well-lg skillSection w3-animate-zoom" style="display:none">
+                   <div class="w3-container w3-green">
+                        <h2 style="text-align: center">Programming Languages and Technologies</h2>
+                    </div>
+                    <ul class="w3-ul w3-border w3-half">
+                        <li><h2>Front-End Development</h2></li>
+                        <li class="w3-hover-green">HTML5</li>
+                        <li class="w3-hover-green">CSS3</li>
+                        <li class="w3-hover-green">JavaScript/JQuery</li>
+                        <li class="w3-hover-green">AJAX</li>
+                        <li class="w3-hover-green">Bootstrap</li>
+                        <li class="w3-hover-green">AngularJS</li>
+                        <li class="w3-hover-green">W3.CSS</li>
+                    </ul>
+                    
+                    <ul class="w3-ul w3-border w3-half">
+                        <li><h2>Scripting/Mobile/OOP</h2></li>
+                        <li class="w3-hover-black">PHP</li>
+                        <li class="w3-hover-black">Java</li>
+                        <li class="w3-hover-black">MySQL</li>
+                        <li class="w3-hover-black">Ionic</li>
+                        <li class="w3-hover-black">Cordova</li>
+                        <li class="w3-hover-black">JSON</li>
+                        <li class="w3-hover-black">XML</li>
+                        <li class="w3-hover-black">Android (learning)</li>
+                    </ul>
+                </div>
+                
+                <div id="professional" class="w3-container skillSection w3-animate-zoom">
+                   <div class="w3-container w3-green">
+                        <h2>Professional Skills</h2>
+                    </div><br>
+                   <p class="start-para">As a developer and programmer, it is important to be a team player. More often than not,
+                   IT projects require diligence and group effort, which are two key qualities that I bring to the table. I
+                   work well with others and can contribute greatly in the brainstorming process of development of IT projects.
+                   </p>
+                   <p class="start-para">Furthermore, it is imperative that one is a well-rounded individual, showing versatility in any given scenario.
+                   That means that he/she needs to be able to adapt regardless of any situation that occurs. This is a strong quality of mine
+                   that I take great pride in, as I have shown to think my way through difficult tasks.</p>
+                   <p class="start-para">Moreover, I am well versed in written and oral communication. As an IT professional, one must
+                   be aware of the fact that proper communication bridges the gap between him/her and clients. Listening to their needs and expectations
+                   while also asking the right questions are essential components in the user requirements gathering phase. I've had experience in this and more
+                   while working for two companies.</p>
+                   <p class="start-para">Problem-solving is a must-have if one is to achieve success in the IT industry. An analytical manner of thinking
+                   is a benefit in that it allows one to break the problem down into smaller, more manageable parts. By tackling these smaller issues,
+                   one will be able to gain insight on how to solve the larger problem as a whole. Thus, I feel that problem-solving is another
+                   crucial strength that I possess.</p>
+                </div>
+                
+                <div id="technical" class="w3-container skillSection w3-animate-zoom" style="display:none">
+                   <div class="w3-container w3-green">
+                        <h2>Technical Knowledge</h2>
+                    </div><br>
+                   <p class="start-para">Aside from knowing the syntax and advantages of certain programming languages and development technologies, an IT
+                   professional must also grasp significant concepts in his/her field. In other words, knowing the tools is half the battle.
+                   Knowing how to apply them in a way that creates a highly efficient product will seal the deal for a client. This fact holds true, especially in software
+                   development where there is a variety of design patterns that can be implemented. Below is a list of concepts that I have knowledge of and have
+                   had experience incorporating:</p><br>
+                   <ul class="w3-ul w3-border">
+                        <li><h2>Technical Concepts</h2></li>
+                        <li class="w3-hover-green">Object-Oriented Design and Programming</li>
+                        <li class="w3-hover-green">Refactoring for Code Maintainability</li>
+                        <li class="w3-hover-green">Software Design Principles and Patterns</li>
+                        <li class="w3-hover-green">Software Development Lifecycle</li>
+                        <li class="w3-hover-green">User-centered Design</li>
+                        <li class="w3-hover-green">Responsive Design</li>
+                    </ul>
+                </div>
+           </div>
+</div>
+
+<!--Footer section-->
+     <footer class="w3-container footer">
+        <h6>Copyright &copy; All Rights Reserved.</h6>
+    </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+                 
+    <script type="text/javascript" src="js/resumescript.js"></script>
+</body>
+</html>
