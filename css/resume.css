@@ -1,0 +1,159 @@
+html, body{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+/*
+ * Styles for navigation and footer
+ **/
+.navbar, .footer{
+    width: 100%;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    
+}
+
+.navbar{
+    position: relative;
+    font-family: sans-serif;
+    border-radius: 0;
+    border-color: #388E3C;
+    height: 13%;
+    border-color: #388E3C;
+    border-top-style: solid;
+    border-top-width: 7px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    text-align: center;
+    padding: 1rem;
+    /*-webkit-box-shadow: 2px -2px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -2px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px -2px 13px 0px rgba(0,0,0,0.75);*/
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.navbar-brand, .nav > li > a{
+    color: #FFFFFF; 
+    text-transform: uppercase;
+}
+
+.nav {
+    padding-top: 2.4em;
+    font-size: 11pt;
+}
+
+.nav > li > a:hover{
+    color: #4CAF50;
+    transition: background ease 0.9s;
+    
+}
+
+.nav > li > a:active{
+    color: #388E3C;
+    
+}
+
+.navbar-brand{
+    font-size: 17pt;
+    padding-top: 2.1em;
+}
+/******************************************************************************************/
+
+/*
+ * Positioning and styling for container and content section
+ * Container ID wraps everything up and has min-height of 100% to take up whole page
+ * Padding needs to be equal to or greater than footer height for content section to avoid overlapping
+ */
+
+#container{
+    min-height:100%;
+    position:relative;
+}
+
+#content{
+    position: relative;
+    padding-bottom: 100px;
+    
+}
+
+
+
+/******************************************************************************************/
+
+/*
+ * Icon coloring and styling 
+ */
+
+i.custom, .green-icon, .validicon{
+    color: #388E3C;
+}
+
+i.custom, .green-icon{
+    font-size: 2em;
+}
+
+.validicon{
+    font-size: 1.5em;
+}
+
+input.ng-invalid{
+    border-color: #d50000;
+}
+
+input.ng-valid{
+    border-color: #388E3C;
+}
+
+.redicon, .errorText{
+    color: #d50000;
+}
+
+
+/******************************************************************************************/
+
+
+/****************************************************************************************/
+
+
+.pic{
+    opacity: 0.7;
+}
+.skillpart{
+    height: 500px;
+}
+
+p{
+    text-align: justify;
+}
+
+.categories{
+    cursor: pointer;
+}
+
+article{
+    margin-left: 30px;
+}
+.brand-icon{
+    color: #388E3C;
+    font-size: 1em;
+}
+
+.start-para{
+    text-indent: 30px;
+    padding-top: 15px;
+}
+
+
+.headText{
+    color: #388E3C;
+    border-left-style: solid;
+    border-width: thick;
+    border-left-color: #388E3C;
+}
