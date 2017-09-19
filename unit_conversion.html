@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Unit Conversion</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+     <link rel="stylesheet" type="text/css" href="css/resume.css">
+</head>
+
+<body>
+
+<div id="container">
+        <!--Navigation bar-->
+                <nav class="navbar navbar-default w3-top w3-container">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#healthNav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                      <a class="navbar-brand w3-text-shadow" href="/">Resume Site</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="healthNav">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Apps
+                             <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="unit_conversion.html">Unit Conversion</a></li>
+                                    <li><a href="order_food.html">Order Food</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="references.html">References</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                
+<!--Content section-->
+
+        <div id="content" ng-app="resumeApp" ng-controller="convertCtrl">
+            
+                <h1 class="headText">Unit Conversion Form</h1>
+           
+            
+            <div class="row">
+                <!--Section where user enters value in textfield for conversion-->
+                <div class="col-sm-4">
+                    <form class="w3-container">
+                        <input class="w3-input" type="text" ng-model="inches"/>
+                        <label>Inches to feet</label>
+                        
+                        <input class="w3-input" type="text" ng-model="fHeit"/>
+                        <label>Fahrenheit to Celsius</label>
+                        
+                        <input class="w3-input" type="text" ng-model="miles"/>
+                        <label>Miles to kilometers</label>
+                        
+                        <input class="w3-input" type="text" ng-model="meters"/>
+                        <label>Meters to Yards</label>
+                        <input class="w3-input" type="text" ng-model="grams"/>
+                        <label>Grams to Pounds</label>
+                    </form>
+                </div>
+                <!--Section that changes based on user input-->
+                <div class="col-sm-8 w3-card-4">
+                    <h2>{{inches}} inches = {{feet()}} feet</h2><br>
+                    <h2>{{fHeit}} F to {{celsius()}} C</h2><br>
+                    <h2>{{miles}} miles to {{kilometers()}} kilometers</h2><br>
+                    <h2>{{meters}} meters to {{yards()}} yards</h2><br>
+                    <h2>{{grams}} grams to {{pounds()}} pounds</h2>
+                </div>
+            </div>
+        </div>
+
+<!--Footer section-->
+     <footer class="w3-container footer">
+        <h6>Copyright &copy; All Rights Reserved.</h6>
+    </footer>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>            
+    <script type="text/javascript" src="js/resumescript.js"></script>
+</body>
+</html>
