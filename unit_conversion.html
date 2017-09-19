@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title>Unit Conversion</title>
+    <title>Home</title>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -52,7 +52,7 @@
         <div id="content" ng-app="resumeApp" ng-controller="convertCtrl">
             
                 <h1 class="headText">Unit Conversion Form</h1>
-           
+                <h5 class="instructText">Please enter a value into the fields below and view results on the right</h5>
             
             <div class="row">
                 <!--Section where user enters value in textfield for conversion-->
@@ -74,7 +74,7 @@
                     </form>
                 </div>
                 <!--Section that changes based on user input-->
-                <div class="col-sm-8 w3-card-4">
+                <div class="col-sm-8 w3-card-4 w3-black">
                     <h2>{{inches}} inches = {{feet()}} feet</h2><br>
                     <h2>{{fHeit}} F to {{celsius()}} C</h2><br>
                     <h2>{{miles}} miles to {{kilometers()}} kilometers</h2><br>
