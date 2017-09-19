@@ -12,7 +12,7 @@ html, body{
     background-color: #4CAF50;
     color: #FFFFFF;
     letter-spacing: 3px;
-    
+    border-bottom: none;
 }
 
 .navbar{
@@ -24,6 +24,7 @@ html, body{
     border-top-style: solid;
     border-top-width: 7px;
     padding-bottom: 0.7em;
+    
 }
 
 .footer{
@@ -59,6 +60,7 @@ html, body{
     color: #388E3C;
     border-bottom: solid;
     border-color: black;
+    border-width: 4px;
 }
 
 .navbar-brand{
@@ -81,34 +83,43 @@ html, body{
 
 #container{
     min-height:100%;
-    position:relative;
+    position: absolute;
+    width: 100%;
 }
 
 #content{
-    position: relative;
-    padding-bottom: 100px;
-    
+    padding-bottom: 100px;  
+}
+
+/*
+ * Home page styling
+ */
+#homePage{
+    height: 400px;
+    background-color: #4CAF50;    
 }
 
 
+/*
+ * Styled jumbotron to change default settings
+ * Jumbotron is useful since it automatically resizes the text on smaller screens without additional coding
+ */
+.jumbotron{
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    background-color: #4CAF50; 
+}
+
+.objective{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
 
 /******************************************************************************************/
 
-/*
- * Icon coloring and styling 
- */
-
-i.custom, .green-icon, .validicon{
-    color: #388E3C;
-}
-
-i.custom, .green-icon{
-    font-size: 2em;
-}
-
-.validicon{
-    font-size: 1.5em;
-}
 
 input.ng-invalid{
     border-color: #d50000;
@@ -152,11 +163,13 @@ p{
     padding-top: 15px;
 }
 
-
-.headText{
+.headText, .instructText{
     color: #388E3C;
     text-indent: 10px;
     margin-left: 20pt;
+}
+
+.instructText{
     padding-bottom: 10px;
     border-bottom-style: solid;
     border-width: thin;
