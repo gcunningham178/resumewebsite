@@ -1,28 +1,3 @@
-var xmlhttp = new XMLHttpRequest();
-var url = "js/references.json";
-
-xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        var myArr = JSON.parse(xmlhttp.responseText);
-        myFunction(myArr);
-    }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-
-//Function that outputs references based on json
-//function myFunction(arr) {
-//    var out = "";
-//    var i;
-//    for(i = 0; i < arr.length; i++) {
-//        out +=         
-//                        " <li class='w3-hover-green'><span>" + arr[i].name + "</span><br>" +
-//                        " <span> Email: " + arr[i].email + "</span>" +
-//                        " <span>" + arr[i].phone + "</span></li>";
-//            }
-//    document.getElementById("refer").innerHTML = out;
-//}
-
 function showCurrentTab(evt, sectionId, contentSection, links)
 {
   var i = 0;
@@ -35,13 +10,51 @@ function showCurrentTab(evt, sectionId, contentSection, links)
      linksList[i].className = linksList[i].className.replace("w3-black", "");
   }
   
-  
-  //for (i = 0; i < skillSec.length; i++)
-  //{
-  //   skilllinks[i].className = skilllinks[i].className.replace("w3-black", "");
-  //}
-  //
   document.getElementById(sectionId).style.display = "block";
   evt.currentTarget.className += " w3-black";
 }
 
+//AngularJS functionality 
+var resumeApp = angular.module("resumeApp", []);
+
+//Controller for handling all unit conversions
+resumeApp.controller("convertCtrl", function($scope){
+    //Initialized variables that bind model data 
+    $scope.inches = 0;
+    $scope.feet = 0;
+    $scope.fHeit = 0;
+    $scope.celsius = 0;
+    $scope.miles = 0;
+    $scope.kilometers = 0;
+    $scope.meters = 0;
+    $scope.yards = 0;
+    $scope.grams = 0;
+    $scope.pounds = 0;
+    
+    //Below are functions that handle the conversion to their respective units
+    $scope.feet = function(){
+        var ft = $scope.inches / 12;
+        return ft.toFixed(2);
+    };
+    
+    $scope.celsius = function(){
+        var c = ($scope.fHeit - 32) * 5 / 9;
+        return c.toFixed(2);
+    };
+    
+    $scope.kilometers = function(){
+        var km = $scope.miles * 1.60934;
+        return km.toFixed(2);
+    };
+    
+    $scope.yards = function(){
+        var yd = $scope.meters / 0.9144;
+        return yd.toFixed(2);
+    };
+    
+    $scope.pounds = function(){
+        var lb = $scope.grams / 454;
+        return lb.toFixed(2);
+    };
+    
+});
