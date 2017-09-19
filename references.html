@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>References</title>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,62 +18,71 @@
 
 <div id="container">
         <!--Navigation bar-->
-                <nav class="navbar w3-top w3-container">
+                <nav class="navbar navbar-default w3-top w3-container">
                   <div class="container-fluid">
                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#healthNav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
                       <a class="navbar-brand w3-text-shadow" href="/">Resume Site</a>
                     </div>
-                    <div id="healthNav">
+                    <div class="collapse navbar-collapse" id="healthNav">
                       <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="skills.html">Skills</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Apps
+                             <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="unit_conversion.html">Unit Conversion</a></li>
+                                    <li><a href="order_food.html">Order Food</a></li>
+                                </ul>
+                        </li>
                         <li><a href="references.html">References</a></li>
                       </ul>
                     </div>
                   </div>
                 </nav>
                 
-<!--Content section-->
-<!--Angular JS will be used to populate this section with content based on link-->
+            <!--Content section-->
+            <div id="content">
+                <div class="w3-container w3-card-8">
+                    <div class="w3-container w3-green">
+                        <h2 style="text-align: center">References</h2>
+                     </div>
+                    <ul id="refer" class='w3-ul w3-black w3-border w3-third'>
+                        <li class="w3-hover-green">Name</li>
+                        <li class="w3-hover-green">Kristen Goodman</li>
+                        <li class="w3-hover-green">Monique Liberti</li>
+                        <li class="w3-hover-green">Kathy Coyle</li>
+                    </ul>
 
-<div id="content">
-    <div class="w3-container w3-card-8">
-        <div class="w3-container w3-green">
-            <h2 style="text-align: center">References</h2>
-         </div>
-        <ul id="refer" class='w3-ul w3-black w3-border w3-third'>
-            <li class="w3-hover-green">Name</li>
-            <li class="w3-hover-green">Kristen Goodman</li>
-            <li class="w3-hover-green">Monique Liberti</li>
-            <li class="w3-hover-green">Kathy Coyle</li>
-        </ul>
-        
-        <ul class='w3-ul w3-border w3-black w3-third'>
-            <li class="w3-hover-green">Email</li>
-            <li class="w3-hover-green">kristen.goodman@carestream.com</li>
-            <li class="w3-hover-green">monique.liberti@carestream.com</li>
-            <li class="w3-hover-green">kcoyle@moog.com</li>
-        </ul>
-        
-        <ul class='w3-ul w3-border w3-black w3-third'>
-            <li class="w3-hover-green">Phone</li>
-            <li class="w3-hover-green">585-627-6265</li>
-            <li class="w3-hover-green">585-627-6662</li>
-            <li class="w3-hover-green">N/A</li>
-        </ul>
-        
-    </div>
-</div>
+                    <ul class='w3-ul w3-border w3-black w3-third'>
+                        <li class="w3-hover-green">Email</li>
+                        <li class="w3-hover-green">kristen.goodman@carestream.com</li>
+                        <li class="w3-hover-green">monique.liberti@carestream.com</li>
+                        <li class="w3-hover-green">kcoyle@moog.com</li>
+                    </ul>
+
+                    <ul class='w3-ul w3-border w3-black w3-third'>
+                        <li class="w3-hover-green">Phone</li>
+                        <li class="w3-hover-green">585-627-6265</li>
+                        <li class="w3-hover-green">585-627-6662</li>
+                        <li class="w3-hover-green">N/A</li>
+                    </ul>
+
+                </div>
+            </div>
 
 <!--Footer section-->
      <footer class="w3-container footer">
         <h6>Copyright &copy; All Rights Reserved.</h6>
     </footer>
-    </div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
-                 
     <script type="text/javascript" src="js/resumescript.js"></script>
 </body>
 </html>
