@@ -140,7 +140,7 @@ input.ng-valid{
 .pic{
     opacity: 0.7;
 }
-.skillpart{
+.skillpart, .aboutSection{
     height: 500px;
 }
 
