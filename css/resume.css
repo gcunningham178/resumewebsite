@@ -2,7 +2,7 @@ html, body{
     font-family: sans-serif;
     margin:0;
     padding:0;
-    height:100%;
+    min-height:100%;
 }
 /*
  * Styles for navigation and footer
@@ -29,7 +29,9 @@ html, body{
 
 .footer{
     position: absolute;
+    right: 0;
     bottom: 0;
+    left: 0;
     height: 70px;
     text-align: center;
     padding: 1rem;
@@ -120,26 +122,12 @@ html, body{
 
 /******************************************************************************************/
 
-
-input.ng-invalid{
-    border-color: #d50000;
-}
-
-input.ng-valid{
-    border-color: #388E3C;
-}
-
-/******************************************************************************************/
-
-
 /*
  * Miscellaneous styling
  */
 
 
-.pic{
-    opacity: 0.7;
-}
+
 .skillpart, .aboutSection{
     height: 500px;
 }
