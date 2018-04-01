@@ -48,16 +48,9 @@
                 
 <!--Content section-->
        <div id="content">
-           <ul class="nav nav-pills nav-justified">
-              <li class="active"><a data-toggle="tab" href="#who">Who Am I?</a></li>
-              <li><a data-toggle="tab" href="#what">What Can I Do?</a></li>
-              <li><a data-toggle="tab" href="#when">When Did I Take Interest in Computing?</a></li>
-              <li><a data-toggle="tab"href="#why">Why Me?</a></li>
-            </ul>
-           
-             <div class="tab-content">
                     <!--Who am I?-->
-                    <div id="who" class="w3-container w3-animate-right tab-pane">
+                    <div class="row">
+                        <div id="who" class="w3-container w3-animate-left tab-pane">
                          <div class="w3-container w3-black">
                              <h2 style="text-align: center">Who am I?</h2>
                           </div><br>
@@ -81,8 +74,11 @@
 
                          </article>
                       </div>
+                    </div>
+                    
                      <!--What can I do?-->
-                    <div id="what" class="w3-container w3-animate-right tab-pane">
+                     <div class="row">
+                         <div id="what" class="w3-container w3-animate-right tab-pane">
                          <div class="w3-container w3-black">
                              <h2 style="text-align: center">What Can I Do?</h2>
                           </div><br>
@@ -106,10 +102,13 @@
                                  </div>
                              </div>
                          </article>
-                      </div>
+                       </div>
+                     </div>
+                    
                  
-                      <!--When did I take interesting in computing?-->
-                    <div id="when" class="w3-container w3-animate-right tab-pane">
+                    <!--When did I take interesting in computing?-->
+                    <div class="row">
+                        <div id="when" class="w3-container w3-animate-left tab-pane">
                          <div class="w3-container w3-black">
                              <h2 style="text-align: center">When Did I take Interesting in Computing?</h2>
                           </div><br>
@@ -130,10 +129,12 @@
                                  </div>
                              </div>
                          </article>
-                      </div>
-                        
-                     <!--Why me?-->
-                    <div id="why" class="w3-container w3-animate-right tab-pane">
+                       </div>
+                     </div>
+           
+                   <!--Why me?-->
+                  <div class="row">
+                      <div id="why" class="w3-container w3-animate-right">
                          <div class="w3-container w3-black">
                              <h2 style="text-align: center">Why Me?</h2>
                           </div><br>
@@ -156,87 +157,7 @@
                              </div>
                          </article>
                       </div>
-                 
-                 </div>
-                <!--<div class="w3-container w3-green w3-cell w3-third w3-mobile w3-card-4" style="height: 550px"> 
-                        <a class="categories" onclick="showCurrentTab(event, 'whoAmI', 'aboutSection', 'categories');">
-                            <div class="w3-hover-light-grey w3-padding">Who Am I?</div>
-                        </a>
-
-                        <a class="categories" onclick="showCurrentTab(event, 'whatCanIDo', 'aboutSection', 'categories');">
-                            <div class="w3-hover-light-grey w3-padding">What Can I Do?</div>
-                        </a>
-
-                        <a class="categories" onclick="showCurrentTab(event, 'whenInterest', 'aboutSection', 'categories');">
-                            <div class="w3-hover-light-grey w3-padding">When Did I Take Interest in Computing?</div>
-                        </a>
-
-                        <a class="categories" onclick="showCurrentTab(event, 'whyMe', 'aboutSection', 'categories');">
-                            <div class="w3-hover-light-grey w3-padding">Why Me?</div>
-                        </a>
-                   </div>
-
-                   <!--Wraps whole content section-->
-                   <!--<div class="w3-container w3-light-grey w3-cell w3-twothird w3-mobile w3-card-4 w3-padding">-->
-                    <!--Individual sections-->
-                        <!--<div id="whoAmI" class="w3-container aboutSection w3-animate-right">
-                            <div class="w3-container w3-black">
-                                <h2 style="text-align: center">Who am I?</h2>
-                            </div><br>
-                            <article>
-                                <p class="start-para">Hi! My name is Gary T. Cunningham, Jr. I am a student at RIT majoring in
-                                Information Technology, and I will graduate in May 2017. I'm a very well-rounded person who views life
-                                from various perspectives. I have an extremely strategic approach to making decisions, which means that I calculate
-                                every step and look at all possible outcomes. Having a sense of humor is very important to me, as it is a wonderful
-                                coping mechanism to stress. When in doubt, smile big and stand tall to make yourself feel better.</p>
-
-                            </article>
-                        </div>
-
-                        <div id="whatCanIDo" class="w3-container aboutSection w3-animate-right" style="display:none">
-                            <div class="w3-container w3-black">
-                                <h2 style="text-align: center">What Can I Do?</h2>
-                            </div><br>
-                            <article>
-                                <p class="start-para">I have a strong interest in application development, especially on the web side of things.
-                                This has led me to hone my skills in front-end web development. Making things easy for the user is my aim
-                                when I'm designing and developing an application. If the user can fulfill his/her tasks with the application in the most
-                                effective manner plausible, then I know that I have done my job. Facilitating user interaction with an application is a very important
-                                component to improving the user experience. In short, I specialize in front-end development, but I can develop software
-                                applications in general.</p>
-
-                            </article>
-                        </div>
-
-
-                        <div id="whenInterest" class="w3-container aboutSection w3-animate-right" style="display:none">
-                            <div class="w3-container w3-black">
-                                <h2 style="text-align: center">When Did I Take Interest in Computing?</h2>
-                            </div><br>
-                            <article>
-                                <p class="start-para">I started taking a strong interest in computing when I first attended RIT. My starting major
-                                was actually Civil Engineering Technology, so the switch was a huge change for me. What brought about this drastic change
-                                was when I explored different web sites on my first laptop and wondered how they were created. Therefore, I talked to my academic advisor, and now
-                                here I am!</p>
-
-                            </article>
-                        </div>
-
-                        <div id="whyMe" class="w3-container aboutSection w3-animate-right" style="display:none">
-                            <div class="w3-container w3-black">
-                                <h2 style="text-align: center">Why Me?</h2>
-                            </div><br>
-                            <article>
-                                <p class="start-para">I feel that I would be a great asset for any company that I work for. Not only do I have sufficient
-                                knowledge in my field, but I am also a diligent individual. I will put forth my best effort to accomplish a given task expeditiously
-                                and efficiently. Finding that balance when it comes to time management plays an integral role in the completion of an
-                                assignment. I don't want to rush a job, but I also don't want to take too much time and miss the deadline. Thus, being punctual and
-                                efficient are two key qualities that I have as a potential employee.</p>
-
-                            </article>
-                        </div>
-                   </div>-->
-
+                  </div>
         </div>
 
 <!--Footer section-->
