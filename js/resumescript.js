@@ -58,3 +58,45 @@ resumeApp.controller("convertCtrl", function($scope){
     };
     
 });
+
+//Controller to populate tables using scope data
+resumeApp.controller("tableCtrl", function($scope){
+  $scope.references = [
+      {
+        name: "Kathleen Coyle",
+        position: "E-Manager",
+        phone: "716-805-2320",
+        email: "kcoyle@moog.com"
+       },
+      {
+        name: "Adam Wolff",
+        position: "Systems Analyst",
+        phone: "716-687-5647",
+        email: "awolff@moog.com"
+       },
+      {
+        name: "Jason Lippmann",
+        position: "Systems Analyst",
+        phone: "716-687-7182",
+        email: "jlippmann@moog.com"
+       },
+      {
+        name: "Kristen Goodman",
+        position: "IT Relationship Manager",
+        phone: "585-627-6265",
+        email: "kristen.goodman@carestream.com"
+       },
+       {
+          name: "Monique Liberti",
+          position: "IT Analyst/Global Call Center",
+          phone: "585-627-6662",
+          email: "monique.liberti@carestream.com"
+        }
+  ];
+  
+});
+
+
+
+
+
