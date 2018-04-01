@@ -98,9 +98,8 @@ html, body{
 /*
  * Home page styling
  */
-#homePage{
-    height: 400px;
-    background-color: #4CAF50;    
+.homePage{
+    background-color: #59b300;    
 }
 
 
@@ -120,6 +119,7 @@ html, body{
     margin-left: auto;
     margin-right: auto;
     border: none;
+    color: white;
 }
 
 /******************************************************************************************/
