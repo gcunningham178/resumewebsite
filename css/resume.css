@@ -13,6 +13,7 @@ html, body{
     color: #FFFFFF;
     letter-spacing: 3px;
     border-bottom: none;
+    margin-bottom: 0 !important;
 }
 
 .navbar{
