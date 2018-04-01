@@ -162,7 +162,7 @@ p{
 .convert-section, .ref-header{
   text-align: center;   
 }
-.about-header, .ref-header, .instructText{
+.skills-header, .about-header, .ref-header, .instructText{
     color: #388E3C;
     padding-bottom: 10px;
     border-bottom-style: solid;
