@@ -160,9 +160,10 @@ p{
 }
 
 .ref-header{
+  color: #388E3C;
   text-align: center;   
 }
-.instructText{
+.ref-header, .instructText{
     padding-bottom: 10px;
     border-bottom-style: solid;
     border-width: thin;
@@ -175,6 +176,5 @@ p{
 }
 
 .convert-section{
-    color: green;
     text-align: center;
 }
