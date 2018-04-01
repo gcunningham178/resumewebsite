@@ -173,3 +173,8 @@ p{
     padding: 2em;
     letter-spacing: 2px;
 }
+
+.convert-section{
+    color: green;
+    text-align: center;
+}
