@@ -159,11 +159,11 @@ p{
     margin-left: 20pt;
 }
 
-.ref-header{
-  color: #388E3C;
+.convert-section, .ref-header{
   text-align: center;   
 }
 .about-header, .ref-header, .instructText{
+    color: #388E3C;
     padding-bottom: 10px;
     border-bottom-style: solid;
     border-width: thin;
@@ -173,18 +173,5 @@ p{
 .ref-section{
     padding: 2em;
 }
-
-.convert-section{
-    text-align: center;
-}
-
-/*
-* Nav Pills Styling
-*/
-.nav-tabs{
-    background-color: #388E3C;
-    color: white;
-}
-
 
 
