@@ -163,7 +163,7 @@ p{
   color: #388E3C;
   text-align: center;   
 }
-.ref-header, .instructText{
+.about-header, .ref-header, .instructText{
     padding-bottom: 10px;
     border-bottom-style: solid;
     border-width: thin;
@@ -172,7 +172,6 @@ p{
 
 .ref-section{
     padding: 2em;
-    letter-spacing: 2px;
 }
 
 .convert-section{
