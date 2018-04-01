@@ -178,3 +178,14 @@ p{
 .convert-section{
     text-align: center;
 }
+
+/*
+* Nav Pills Styling
+*/
+.nav-tabs{
+    background-color: #388E3C;
+    color: white;
+}
+
+
+
