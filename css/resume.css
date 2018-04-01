@@ -13,7 +13,6 @@ html, body{
     color: #FFFFFF;
     letter-spacing: 3px;
     border-bottom: none;
-    margin-bottom: 0 !important;
 }
 
 .navbar{
@@ -26,6 +25,10 @@ html, body{
     border-top-width: 7px;
     padding-bottom: 0.7em;
     
+}
+
+.navbar-default{
+    margin-bottom: 0;
 }
 
 .footer{
