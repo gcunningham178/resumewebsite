@@ -94,6 +94,7 @@ html, body{
 }
 
 #content{
+    position: relative;
     padding-bottom: 70px;
     margin-top: 17px;
 }
