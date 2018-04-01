@@ -159,6 +159,9 @@ p{
     margin-left: 20pt;
 }
 
+.ref-header{
+  text-align: center;   
+}
 .instructText{
     padding-bottom: 10px;
     border-bottom-style: solid;
