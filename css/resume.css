@@ -135,10 +135,13 @@ html, body{
 
 
 
-.skillpart, .aboutSection{
+.skillpart{
     height: 500px;
 }
 
+.skillSection{
+    height: 550px;
+}
 
 .categories{
     cursor: pointer;
