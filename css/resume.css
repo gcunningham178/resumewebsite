@@ -179,15 +179,4 @@ p{
     padding: 2em;
 }
 
-/*
- * CSS Animation customization
- */
-
-.w3-animate-left{
-    transition: left 3s;
-}
-
-.w3-animate-right{
-    transition: right 3s;
-}
 
