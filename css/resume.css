@@ -135,6 +135,7 @@ html, body{
 
 
 .skillSection{
+    position: relative;
     height: 530px;
 }
 
