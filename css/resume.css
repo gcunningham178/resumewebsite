@@ -62,13 +62,6 @@ html, body{
     transition: border ease 0.5s;
 }
 
-.navbar-nav li.active a{
-    color: #388E3C !important;
-    border-bottom: solid !important;
-    border-color: black !important;
-    border-width: 4px !important;
-}
-
 .navbar-brand{
     font-size: 17pt;
     margin-top: 1.5em;
