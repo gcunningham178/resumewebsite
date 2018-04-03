@@ -1,5 +1,5 @@
 html, body{
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
     margin:0;
     padding:0;
     min-height:100%;
@@ -62,7 +62,7 @@ html, body{
     transition: border ease 0.5s;
 }
 
-.navbar-default .nav > li > a:active{
+.navbar-nav li.active a{
     color: #388E3C;
     border-bottom: solid;
     border-color: black;
