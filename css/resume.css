@@ -63,6 +63,7 @@ html, body{
 }
 
 .navbar-brand{
+    font-family: 'Alex Brush';
     font-size: 17pt;
     margin-top: 1.5em;
 }
